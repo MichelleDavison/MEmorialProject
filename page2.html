@@ -6,27 +6,37 @@
         <title>MEmorial</title>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         
-        <script src="jquery.cycle2.min.js"></script>
+	    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	    <link rel="stylesheet" href="nivo-slider.css" type="text/css" />
+	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+	    <script src="jquery.nivo.slider.pack.js" type="text/javascript"></script>
+	    <link rel="stylesheet" href="nivo-slider/themes/default/default.css" type="text/css" />   
+		<script type="text/javascript">
+		    $(window).load(function() {
+		        $('#slider').nivoSlider({effect: 'fade', 
+		        						pauseOnHover: false,
+		        						directionNav: false,
+		        						controlNav: false });
+		    });
+		</script>
     </head>
     <body>
-        <div class="cycle-slideshow"
-            
-        	 data-cycle-fx="fadeout"
-            
-        	 data-cycle-pause-on-hover="true"
-            
-        	 data-cycle-speed="50"  
-            
-        	 data-cycle-caption="#alt-caption"
-            
-        	 data-cycle-caption-template="{{alt}}"   
-        
-    	> 
-            <img src="images/rsz_sonic-redskins-sign.jpg" alt="Racist language is casually used to cheer on a sports team."/> 
-            <img src="images/NativeGirl.jpg" alt="While the suicide rate among American Indian/Alaska Native adolescents and young adults ages 15 to 34 is 2.5 times higher than the national average for that age group" />
-        </div>
+    
+    <div class="slider-wrapper theme-default">
+    	<div class="ribbon"></div>
+    	<div id="slider" class="nivoSlider">
+            <img src="images/sonic-redskins-sign.jpg" alt="Racist language is casually used to cheer on a sports team." title="#htmlcaption1"/> 
+            <img src="images/KiowaGirls.jpg" alt="While the suicide rate among American Indian/Alaska Native adolescents and young adults ages 15 to 34 is 2.5 times higher than the national average for that age group" title="#htmlcaption2"/>
+		</div>
+	</div> 
+	<div id="htmlcaption1" class="nivo-html-caption">
+	    Racist language is casually used to cheer on a sports team.
+	</div>
+	<div id="htmlcaption2" class="nivo-html-caption">
+		While the suicide rate among American Indian/Alaska Native adolescents and young adults ages 15 to 34 is 2.5 times higher than the national average for that age group.
+	</div>
 
-        <div id="alt-caption" class="center"></div>      
         <p><a href="page3.html">Next</a></p>         
     </body>
 </html>
