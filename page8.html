@@ -6,29 +6,39 @@
         <title>MEmorial</title>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         
-        <script src="jquery.cycle2.min.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	    <link rel="stylesheet" href="nivo-slider.css" type="text/css" />
+	    <script src="jquery.nivo.slider.pack.js" type="text/javascript"></script>
+	    <link rel="stylesheet" href="nivo-slider/themes/default/default.css" type="text/css" />   
+		<script type="text/javascript">
+		    $(window).load(function() {
+		        $('#slider').nivoSlider({effect: 'fade', 
+		        						pauseOnHover: false,
+		        						directionNav: false,
+		        						controlNav: false });
+		    });
+		</script>
     </head>
     <body>
-        <div class="cycle-slideshow"
-            
-        	 data-cycle-fx="fadeout"
-            
-        	 data-cycle-pause-on-hover="true"
-            
-        	 data-cycle-speed="50"  
-            
-        	 data-cycle-caption="#alt-caption"
-            
-        	 data-cycle-caption-template="{{alt}}"   
-        
-    	> 
-            <img src="images/rsz_catlin.jpg" alt="White Cloud, Head Chief of the Iowas depicted by George Catlin. Catlin created these paintings to display to people in the East and Europe who had never seen a native person."/>
-            <img src="images/rsz_wintercount.jpg" alt="While native people depicted themselves in relation to the world and important events, as in this Winter Count" />
-        </div>
-        <div id="alt-caption" class="center"></div>    	
-        <p><a href="page9.html">Next</a></p>         
+    
+    <div class="slider-wrapper theme-default">
+    	<div class="ribbon"></div>
+    	<div id="slider" class="nivoSlider">
+            <img src="images/rsz_catlin.jpg" alt="White Cloud, Head Chief of the Iowas depicted by George Catlin. Catlin created these paintings to display to people in the East and Europe who had never seen a native person." title="#htmlcaption1"/>
+            <img src="images/rsz_wintercount.jpg" alt="While native people depicted themselves in relation to the world and important events, as in this Winter Count." title="#htmlcaption2"/>
+		</div>
+	</div> 
+	<div id="htmlcaption1" class="nivo-html-caption">
+	    White Cloud, Head Chief of the Iowas depicted by George Catlin. Catlin created these paintings to display to people in the East and Europe who had never seen a native person.
+	</div>
+	<div id="htmlcaption2" class="nivo-html-caption">
+		While <span id="emphasis">Native people depicted themselves</span> in relation to the world and important events, as in this Winter Count.
+	</div>
+        <a href="page9.html">Next</a>        
     </body>
 </html>
+
+
+
 

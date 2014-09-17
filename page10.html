@@ -4,14 +4,33 @@
     <head>
         <meta charset="utf-8" />
         <title>MEmorial</title>
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+	    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	    <link rel="stylesheet" href="nivo-slider.css" type="text/css" />
+	    <script src="jquery.nivo.slider.pack.js" type="text/javascript"></script>
+	    <link rel="stylesheet" href="nivo-slider/themes/default/default.css" type="text/css" />   
+		<script type="text/javascript">
+		    $(window).load(function() {
+		        $('#slider').nivoSlider({effect: 'fade', 
+		        						pauseOnHover: false,
+		        						directionNav: false,
+		        						controlNav: false });
+		    });
+		</script>
     </head>
     <body>
-        <figure>
-            <img src="images/rsz_theflyerwhite.jpg" alt="Late 16th century depiction of a native conjuror."/>
-            <figcaption>Late 16th century depiction of a native conjuror intended to show English people back home the exotic nature of the natives, upon whom European colonists were wholly dependent.</figcaption>
-        </figure>  
-       <p><a href="index.html">Home</a></p>        
+    
+    <div class="slider-wrapper theme-default">
+    	<div class="ribbon"></div>
+    	<div id="slider" class="nivoSlider">
+            <img src="images/rsz_theflyerwhite.jpg" alt="Late 16th century depiction of a native conjuror intended to show English people back home the exotic nature of the natives, upon whom European colonists were wholly dependent. The English were trying to make sense of a people with whom they did not find much in common. Chiefs and Princesses are inventions of the English, used as metaphors for their own social structures." title="#htmlcaption1"/>
+	</div> 
+	<div id="htmlcaption1" class="nivo-html-caption">
+	    Late 16th century depiction of a native conjuror intended to show English people back home the exotic nature of the natives, upon whom European colonists were wholly dependent. The English were trying to make sense of a people with whom they did not find much in common. <span id="emphasis">Chiefs and Princesses</span> are inventions of the English, used as metaphors for their own social structures.
+	</div>
+        <a href="page99.html">Further Reading</a>          
+        <a href="index.html">Home</a>        
     </body>
 </html>

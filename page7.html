@@ -1,35 +1,43 @@
 <!DOCTYPE html>
 
+
 <html lang="en">
     <head>
         <meta charset="utf-8" />
         <title>MEmorial</title>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         
-        <script src="jquery.cycle2.min.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	    <link rel="stylesheet" href="nivo-slider.css" type="text/css" />
+	    <script src="jquery.nivo.slider.pack.js" type="text/javascript"></script>
+	    <link rel="stylesheet" href="nivo-slider/themes/default/default.css" type="text/css" />   
+		<script type="text/javascript">
+		    $(window).load(function() {
+		        $('#slider').nivoSlider({effect: 'fade', 
+		        						pauseOnHover: false,
+		        						directionNav: false,
+		        						controlNav: false });
+		    });
+		</script>
     </head>
     <body>
-        <div class="cycle-slideshow"
-            
-        	 data-cycle-fx="fadeout"
-            
-        	 data-cycle-pause-on-hover="true"
-            
-        	 data-cycle-speed="50"  
-            
-        	 data-cycle-caption="#alt-caption"
-            
-        	 data-cycle-caption-template="{{alt}}"   
-        
-    	> 
-            <img src="images/Metamora.gif" alt="Actors depicting Natives in redface is nothing new. Here 19th Century stage actor Edwin Forrest plays Metamora; or, The Last of the Wampanoags" />
-            <img src="images/KingPhilip.jpeg" alt="Metamora was based on the real Native Metacomet, or King Philip, who rebelled against encroaching Puritans in the 1670s. He was killed and his body dismembered by Christian settlers who used the body parts as souvenirs." />
-        </div>
-        
-        <div id="alt-caption" class="center"></div>    	
-        <p><a href="page8.html">Next</a></p>         
+    
+    <div class="slider-wrapper theme-default">
+    	<div class="ribbon"></div>
+    	<div id="slider" class="nivoSlider">
+            <img src="images/Metamora.jpg" alt="Actors depicting Natives in redface is nothing new. Here 19th Century stage actor Edwin Forrest plays Metamora; or, The Last of the Wampanoags." title="#htmlcaption1"/>
+            <img src="images/KingPhilip.jpeg" alt="Metamora was based on the real Native Metacomet, or King Philip, who rebelled against encroaching Puritans in the 1670s. He was killed and his body dismembered by Christian settlers who used the body parts as souvenirs." title="#htmlcaption2"/>
+		</div>
+	</div> 
+	<div id="htmlcaption1" class="nivo-html-caption">
+	    Actors depicting Natives in redface is nothing new. Here 19th Century stage actor Edwin Forrest plays <span id="italics">Metamora; or, The Last of the Wampanoags</span>. This was a common theme of 19th century fiction -- the disappearing Noble Indian. Euro-Americans felt comfortable with this as they had less and less contact with Native people, especially in the East.
+	</div>
+	<div id="htmlcaption2" class="nivo-html-caption">
+		<span id="italics">Metamora</span> was based on the real Native Metacomet, or King Philip, who rebelled against encroaching Puritans in the 1670s. He was killed and his body dismembered by terrified <span id="emphasis">Christian</span> settlers who used the body parts as <span id="emphasis">souvenirs</span>.
+	</div>
+        <a href="page8.html">Next</a>        
     </body>
 </html>
+
 

@@ -6,30 +6,38 @@
         <title>MEmorial</title>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         
-        <script src="jquery.cycle2.min.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	    <link rel="stylesheet" href="nivo-slider.css" type="text/css" />
+	    <script src="jquery.nivo.slider.pack.js" type="text/javascript"></script>
+	    <link rel="stylesheet" href="nivo-slider/themes/default/default.css" type="text/css" />   
+		<script type="text/javascript">
+		    $(window).load(function() {
+		        $('#slider').nivoSlider({effect: 'fade', 
+		        						pauseOnHover: false,
+		        						directionNav: false,
+		        						controlNav: false });
+		    });
+		</script>
     </head>
     <body>
-        <div class="cycle-slideshow"
-            
-        	 data-cycle-fx="fadeout"
-            
-        	 data-cycle-pause-on-hover="true"
-            
-        	 data-cycle-speed="50"  
-            
-        	 data-cycle-caption="#alt-caption"
-            
-        	 data-cycle-caption-template="{{alt}}"   
-        
-    	> 
-            <img src="images/rsz_pocahontas.png"alt="Pocahontas, renamed Rebecca and presented to the King in London, where she died of smallpox less than a year after her arrival."/>
-            <img src="images/rsz_pocohantashalloween.jpg" alt="Native women today are seen as hypersexual people." />
-        </div>
-        
-        <div id="alt-caption" class="center"></div>    
-        <p><a href="page10.html">Next</a></p>         
+    
+    <div class="slider-wrapper theme-default">
+    	<div class="ribbon"></div>
+    	<div id="slider" class="nivoSlider">
+            <img src="images/rsz_pocahontas.png"alt="Pocahontas, renamed Rebecca and presented to the King in London, where she died of smallpox less than a year after her arrival." title="#htmlcaption1"/>
+            <img src="images/rsz_pocohantashalloween.jpg" alt="Native women today are seen as hypersexual people." title="#htmlcaption2"/>
+		</div>
+	</div> 
+	<div id="htmlcaption1" class="nivo-html-caption">
+	    Pocahontas, <span id="emphasis">renamed Rebecca</span> and presented to the King in London, where she died of smallpox less than a year after her arrival. Scholars speculate she married John Rolfe in an attempt to secure safety for her people.
+	</div>
+	<div id="htmlcaption2" class="nivo-html-caption">
+		Native women today are caricatured as <span id="emphasis">hypersexual</span> people.
+	</div>
+        <a href="page9.html">Next</a>        
     </body>
 </html>
+
+
 
