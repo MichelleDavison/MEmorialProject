@@ -30,6 +30,12 @@ h1 {
 
 }
 
+#emphasis {
+	font-size: 200%;
+	font-style: bold;
+	color: red;
+}
+
 a:hover, a:visited, a:link, a:active  {
 
     color: #F08E37;

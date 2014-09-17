@@ -6,29 +6,40 @@
         <title>MEmorial</title>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         
-        <script src="jquery.cycle2.min.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	    <link rel="stylesheet" href="nivo-slider.css" type="text/css" />
+	    <script src="jquery.nivo.slider.pack.js" type="text/javascript"></script>
+	    <link rel="stylesheet" href="nivo-slider/themes/default/default.css" type="text/css" />   
+		<script type="text/javascript">
+		    $(window).load(function() {
+		        $('#slider').nivoSlider({effect: 'fade', 
+		        						pauseOnHover: false,
+		        						directionNav: false,
+		        						controlNav: false });
+		    });
+		</script>
     </head>
     <body>
-        <div class="cycle-slideshow"
-            
-        	 data-cycle-fx="fadeout"
-            
-        	 data-cycle-pause-on-hover="true"
-            
-        	 data-cycle-speed="50"  
-            
-        	 data-cycle-caption="#alt-caption"
-            
-        	 data-cycle-caption-template="{{alt}}"   
-        
-    	> 
-            <img src="images/rsz_cryingindian.jpg" alt="Italian-American actor Espera Oscar de Corti made a career of depicting Native Americans in movies and television as Iron Eyes Cody. In this ad, he plays a noble savage, saddened by pollution." />
-            <img src="images/rsz_woundedknee1973.jpg" alt="This ad was popular around the same time members of the American Indian Movement occupied Wounded Knee on the Pine Ridge Indian Reservation in South Dakota." />
-        </div>
-        
-        <div id="alt-caption" class="center"></div>
-        <p><a href="page6.html">Next</a></p>        
-        </body>
+    
+    <div class="slider-wrapper theme-default">
+    	<div class="ribbon"></div>
+    	<div id="slider" class="nivoSlider">
+            <img src="images/rsz_cryingindian.jpg" alt="Italian-American actor Espera Oscar de Corti made a career of depicting Native Americans in movies and television as Iron Eyes Cody. In this ad, he plays a noble savage, saddened by pollution." title="#htmlcaption1"/>
+            <img src="images/rsz_woundedknee1973.jpg" alt="This ad was popular around the same time members of the American Indian Movement occupied Wounded Knee on the Pine Ridge Indian Reservation in South Dakota." title="#htmlcaption2"/>
+		</div>
+	</div> 
+	<div id="htmlcaption1" class="nivo-html-caption">
+	    Italian-American actor Espera Oscar de Corti made a career of depicting Native Americans in movies and television as Iron Eyes Cody. In this ad, he plays a noble savage, saddened by pollution.
+	</div>
+	<div id="htmlcaption2" class="nivo-html-caption">
+		This ad was popular around the same time members of the American Indian Movement occupied Wounded Knee on the Pine Ridge Indian Reservation in South Dakota.
+	</div>
+
+        <p><a href="page6.html">Next</a></p>         
+    </body>
 </html>
+
+
+            
+
