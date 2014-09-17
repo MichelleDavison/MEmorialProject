@@ -16,7 +16,11 @@
 		        $('#slider').nivoSlider({effect: 'fade', 
 		        						pauseOnHover: false,
 		        						directionNav: false,
-		        						controlNav: false });
+		        						controlNav: false,
+		        						slideshowEnd: function(){
+		        									window.open("page9.html", "_self");
+		        									}, 
+		        						});
 		    });
 		</script>
     </head>
@@ -34,8 +38,7 @@
 	</div>
 	<div id="htmlcaption2" class="nivo-html-caption">
 		While <span id="emphasis">Native people depicted themselves</span> in relation to the world and important events, as in this Winter Count.
-	</div>
-        <a href="page9.html">Next</a>        
+	</div>       
     </body>
 </html>
 

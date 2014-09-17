@@ -16,7 +16,11 @@
 		        $('#slider').nivoSlider({effect: 'fade', 
 		        						pauseOnHover: false,
 		        						directionNav: false,
-		        						controlNav: false });
+		        						controlNav: false,
+		        						slideshowEnd: function(){
+		        									window.open("page10.html", "_self");
+		        									}, 
+		        						});
 		    });
 		</script>
     </head>
@@ -25,7 +29,7 @@
     <div class="slider-wrapper theme-default">
     	<div class="ribbon"></div>
     	<div id="slider" class="nivoSlider">
-            <img src="images/rsz_pocahontas.png"alt="Pocahontas, renamed Rebecca and presented to the King in London, where she died of smallpox less than a year after her arrival." title="#htmlcaption1"/>
+            <img src="images/rsz_pocahontas.jpg"alt="Pocahontas, renamed Rebecca and presented to the King in London, where she died of smallpox less than a year after her arrival." title="#htmlcaption1"/>
             <img src="images/rsz_pocohantashalloween.jpg" alt="Native women today are seen as hypersexual people." title="#htmlcaption2"/>
 		</div>
 	</div> 
@@ -35,7 +39,7 @@
 	<div id="htmlcaption2" class="nivo-html-caption">
 		Native women today are caricatured as <span id="emphasis">hypersexual</span> people.
 	</div>
-        <a href="page9.html">Next</a>        
+     
     </body>
 </html>
 

@@ -16,7 +16,11 @@
 		        $('#slider').nivoSlider({effect: 'fade', 
 		        						pauseOnHover: false,
 		        						directionNav: false,
-		        						controlNav: false });
+		        						controlNav: false,
+		        						slideshowEnd: function(){
+		        									window.open("page7.html", "_self");
+		        									}, 
+		        						});
 		    });
 		</script>
     </head>
@@ -35,7 +39,7 @@
 	<div id="htmlcaption2" class="nivo-html-caption">
 		While films with Natives in lead roles often starred actors in <span id="emphasis">redface</span>. This is Burt Lancaster in <span id="italics">Apache</span>.
 	</div>
-        <a href="page7.html">Next</a>        
+     
     </body>
 </html>
 

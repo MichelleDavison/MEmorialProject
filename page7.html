@@ -17,7 +17,11 @@
 		        $('#slider').nivoSlider({effect: 'fade', 
 		        						pauseOnHover: false,
 		        						directionNav: false,
-		        						controlNav: false });
+		        						controlNav: false,
+		        						slideshowEnd: function(){
+		        									window.open("page8.html", "_self");
+		        									}, 
+		        						});
 		    });
 		</script>
     </head>
@@ -36,7 +40,7 @@
 	<div id="htmlcaption2" class="nivo-html-caption">
 		<span id="italics">Metamora</span> was based on the real Native Metacomet, or King Philip, who rebelled against encroaching Puritans in the 1670s. He was killed and his body dismembered by terrified <span id="emphasis">Christian</span> settlers who used the body parts as <span id="emphasis">souvenirs</span>.
 	</div>
-        <a href="page8.html">Next</a>        
+        
     </body>
 </html>
 

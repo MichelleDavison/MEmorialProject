@@ -21,19 +21,38 @@ img	{
 	}
 	
 p {
-	background-color: #000;
+	background-color: #2B2710;
+	color: #eeeeee;
+	padding: 20px;
+    margin: 0px 70px 0px 70px;
+	box-shadow: 4px 4px 4px  rgb(43, 39, 16);
+}
+
+p:first-letter {
+	font-size: 200%;
+}
+
+
+figcaption {
+	text-align: center;
 }
 
 h1 {
 
     font-size: 300%;
-
+    padding: 10px;
+    text-align: center;
+    color: #F4CF69;
+    background-color: #BF4739;
+    padding: 30px;
+    margin: 30px 70px 30px 70px;
+	box-shadow: 4px 4px 4px  #2B2710;
 }
 
 #emphasis {
 	font-size: 200%;
 	font-style: bold;
-	color: red;
+	color: #F33C30;
 }
 
 #italics {
@@ -60,11 +79,16 @@ li {
 
 
 
-#htmlcaption1 {
-
-    
+#htmlcaption1 {    
 
     font-size: 150%;
 
 }
+
+#htmlcaption2 {    
+
+    font-size: 150%;
+
+}
+
 

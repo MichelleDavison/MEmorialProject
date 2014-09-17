@@ -16,7 +16,11 @@
 		        $('#slider').nivoSlider({effect: 'fade', 
 		        						pauseOnHover: false,
 		        						directionNav: false,
-		        						controlNav: false });
+		        						controlNav: false,
+		        						slideshowEnd: function(){
+		        									window.open("page99.html", "_self");
+		        									}, 
+		        						});
 		    });
 		</script>
     </head>
@@ -29,8 +33,7 @@
 	</div> 
 	<div id="htmlcaption1" class="nivo-html-caption">
 	    Late 16th century depiction of a native conjuror intended to show English people back home the exotic nature of the natives, upon whom European colonists were wholly dependent. The English were trying to make sense of a people with whom they did not find much in common. <span id="emphasis">Chiefs and Princesses</span> are inventions of the English, used as metaphors for their own social structures.
-	</div>
-        <a href="page99.html">Further Reading</a>          
-        <a href="index.html">Home</a>        
+	</div>     
+      
     </body>
 </html>

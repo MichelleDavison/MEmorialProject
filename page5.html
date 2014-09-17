@@ -16,7 +16,11 @@
 		        $('#slider').nivoSlider({effect: 'fade', 
 		        						pauseOnHover: false,
 		        						directionNav: false,
-		        						controlNav: false });
+		        						controlNav: false,
+		        						slideshowEnd: function(){
+		        									window.open("page6.html", "_self");
+		        									}, 
+		        						});
 		    });
 		</script>
     </head>
@@ -35,8 +39,7 @@
 	<div id="htmlcaption2" class="nivo-html-caption">
 		This ad was popular around the same time members of the <span id="emphasis">American Indian Movement occupied Wounded Knee</span> on the Pine Ridge Indian Reservation in South Dakota.
 	</div>
-
-        <a href="page6.html">Next</a>        
+    
     </body>
 </html>
 
