@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>MEmorial</title>
+        <title>#notyourmascot</title>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         
 	    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption' rel='stylesheet' type='text/css'>
@@ -17,6 +17,7 @@
 		        						pauseOnHover: false,
 		        						directionNav: false,
 		        						controlNav: false,
+										pauseTime: 6000,   
 		        						slideshowEnd: function(){
 		        									window.open("page99.html", "_self");
 		        									}, 
@@ -30,10 +31,15 @@
     	<div class="ribbon"></div>
     	<div id="slider" class="nivoSlider">
             <img src="images/rsz_theflyerwhite.jpg" alt="Late 16th century depiction of a native conjuror intended to show English people back home the exotic nature of the natives, upon whom European colonists were wholly dependent. The English were trying to make sense of a people with whom they did not find much in common. Chiefs and Princesses are inventions of the English, used as metaphors for their own social structures." title="#htmlcaption1"/>
-	</div> 
+            <img src="images/namechange.jpg" alt="Who gets to decide on the meaning of Indian identity? By keeping racist mascots, sports teams perpetuate the myth that Indian lives don't matter." title="#htmlcaption2" pauseTime="7000"/>	
+        </div>
+    </div> 
 	<div id="htmlcaption1" class="nivo-html-caption">
 	    Late 16th century depiction of a native conjuror intended to show English people back home the exotic nature of the natives, upon whom European colonists were wholly dependent. The English were trying to make sense of a people with whom they did not find much in common. <span id="emphasis">Chiefs and Princesses</span> are inventions of the English, used as metaphors for their own social structures.
 	</div>     
+    <div id="htmlcaption2" class="nivo-html-caption">
+        Who gets to decide on the meaning of Indian identity? By keeping racist mascots, sports teams perpetuate the myth that <span id="emphasis">Indian lives</span> don't <span id="emphasis">matter</span>.
+    </div>
       
     </body>
 </html>
